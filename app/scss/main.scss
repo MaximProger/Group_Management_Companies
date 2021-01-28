@@ -1,0 +1,33 @@
+// Max-width
+$tablet: 1199px;
+$mobile: 767px;
+$mobile-sm: 376px;
+
+.price {
+  display: none;
+
+  &--active {
+    display: inline-block;
+  }
+}
+
+@media (max-width: $mobile) {
+  body {
+    min-width: 100%;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .sub_category_page .column_right_products_container {
+    width: 100%;
+  }
+
+  .products_page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
